@@ -6,6 +6,7 @@
 ### 목차
 
 [1. 싱글톤](#:bulb:-싱글톤)
+[2. 팩토리](#:bulb:-팩토리)
 
 &nbsp;
 
@@ -16,8 +17,6 @@
 - 클래스에 대한 <b>단일 객체</b> 생성
 - 전역 객체 제공
 - 공유된 리소스에 대한 동시 접근 제어
-
-&nbsp;
 
 > 구현
 
@@ -30,6 +29,23 @@
 - <a href="https://github.com/myejin/Design_Pattern/blob/main/%EC%8B%B1%EA%B8%80%ED%86%A4/ex1_db_app.py">`[예제1]데이터베이스 연결`</a>
 
 - <a href="https://github.com/myejin/Design_Pattern/blob/main/%EC%8B%B1%EA%B8%80%ED%86%A4/ex1_db_app.py">`[예제2]인프라 헬스체크`</a>
+
+&nbsp;
+
+### :bulb: 팩토리
+
+> 목적
+
+- 객체 생성과 클래스 구현을 나눠 상호의존도를 줄인다.
+- 기존 코드를 수정하지 않고, 팩토리에 새로운 클래스를 추가할 수 있다.
+
+> 구현
+
+- <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/simple_factory.py">`심플팩토리(기본 개념이라, 패턴으로 인정하지 않기도 한다.)`</a>
+
+- <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/factory_method.py">`팩토리 메소드 - 프로필 생성`</a>
+
+- <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/abstract_factory.py">`추상 팩토리 - 피자공장`</a>
 
 &nbsp;
 
