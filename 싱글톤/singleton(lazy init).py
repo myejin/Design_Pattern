@@ -18,7 +18,7 @@ class Singleton:
 
 
 if __name__ == "__main__":
-    s = Singleton()
+    s = Singleton()  # 클래스는 초기화했지만 객체는 아직 생성되지 않았다.
     print("안녕")
     print("인스턴스 드디어 생성,", Singleton.getInstance())
-    s1 = Singleton()
+    s1 = Singleton()  # 객체는 생성되어 있다.
