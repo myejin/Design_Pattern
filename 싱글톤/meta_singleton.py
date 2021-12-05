@@ -1,4 +1,6 @@
 class MetaSingleton(type):
+    """메타클래스는 클래스 생성과 객체 초기화를 더 세부적으로 제어할 수 있다."""
+    
     _instances = {}
 
     def __call__(cls, *args, **kwargs):
