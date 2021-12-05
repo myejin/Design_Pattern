@@ -4,21 +4,21 @@
 
 ### 목차
 
-[1. 싱글톤](#:bulb:-싱글톤)<br>
-[2. 팩토리](#:bulb:-팩토리)<br>
+[1. 싱글톤(생성)](#:bulb:-싱글톤)<br>
+[2. 팩토리(생성)](#:bulb:-팩토리)<br>
 [3. 퍼사드](#:bulb:-퍼사드)<br>
 [4. 프록시](#:bulb:-프록시)
 
 &nbsp;
 
 ### :bulb: 싱글톤
-
-> 목적
-
-- 생성 디자인 패턴
-- 클래스에 대한 <b>단일 객체</b>를 생성한다.
-- 전역 객체를 제공한다.
-- 공유된 리소스에 대해 동시 접근할 수 있다.
+- 글로벌하게 접근 가능한 하나의 객체를 제공하는 패턴
+- 사용 예시
+    - 데이터의 일관성을 위해 하나의 DB 객체가 필요한 경우
+    - 여러 서비스의 로그를 하나의 파일에 남기는 경우
+- 단점
+    - 같은 객체를 참조하는 여러 개의 참조자가 생긴다.
+    - 전역 변수를 수정하면 종속된 모든 클래스에 의도치 않은 영향을 줄 수 있다. 
 
 > 구현
 
@@ -38,17 +38,19 @@
 
 > 목적
 
-- 생성 디자인 패턴
 - 객체 생성과 클래스 구현을 나눠 상호의존도를 줄인다.
 - 기존 코드를 수정하지 않고, 팩토리에 새로운 클래스를 추가할 수 있다.
 
 > 구현
 
 - <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/simple_factory.py">`심플팩토리(기본 개념이라, 패턴으로 인정하지 않기도 한다.)`</a>
+<img width="450" src="https://user-images.githubusercontent.com/42771578/144752568-e32f2ee6-5938-40af-9ec0-5208367f2db6.png">
 
 - <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/factory_method.py">`팩토리 메소드 - 프로필 생성`</a>
+<img width="650" src="https://user-images.githubusercontent.com/42771578/144753400-7b410c63-4e72-43a9-8ad6-48e74d6e66b3.png">
 
 - <a href="https://github.com/myejin/Design_Pattern/blob/main/%ED%8C%A9%ED%86%A0%EB%A6%AC/abstract_factory.py">`추상 팩토리 - 피자공장`</a>
+    - 팩토리 메소드가 인스턴스 생성을 서브클래스에게 맡기는 반면, 추상 팩토리 메소드는 관련 객체의 집합을 생성한다.
 
 &nbsp;
 
